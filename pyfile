@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# I was tired to write declaration in
+# python files so this script generates
+# evironment and encoding declarations.
+
 echo "Ime datoteke: "
 read ime_datoteke
 printf "#!/bin/usr/env python\n#! -*- coding: utf-8 -*-" > "$ime_datoteke".py

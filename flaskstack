@@ -3,13 +3,23 @@
 # This is script that creates and downloads skeleton
 # Flask application from https://github.com/kristjanstrojan/flaskstack.
 
+# Reads the name of the new folder
 echo "Name of application folder: "
 read app_folder
+
+# Creates folder and cd into it.
 mkdir $app_folder
 cd $app_folder
+
+# Gets the code from the github repository.
 wget https://github.com/kristjanstrojan/flaskstack/archive/master.zip
+
+# Unzip iz and remove zip file.
 unzip ./master.zip
 rm ./master.zip
+
+# Copy everything from unzipped folder
+# to parent and remove zipped folder.
 cp -r flaskstack-master/* ./
 rm -r flaskstack-master
 
