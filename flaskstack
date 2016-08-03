@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This is script that creates and downloads skeleton
+# Flask application from https://github.com/kristjanstrojan/flaskstack.
+
 echo "Name of application folder: "
 read app_folder
 mkdir $app_folder
