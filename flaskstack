@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Name of application folder: "
+read app_folder
+mkdir $app_folder
+cd $app_folder
+wget https://github.com/kristjanstrojan/flaskstack/archive/master.zip
+unzip ./master.zip
+rm ./master.zip
+cp -r flaskstack-master/* ./
+rm -r flaskstack-master
+

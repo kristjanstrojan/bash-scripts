@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Ime datoteke: "
+read ime_datoteke
+printf "#!/bin/usr/env python\n#! -*- coding: utf-8 -*-" > "$ime_datoteke".py
